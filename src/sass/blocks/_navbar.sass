@@ -1,0 +1,70 @@
+.navbar
+  background-color: $main-color
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 50px
+  &-logo
+    max-width: 100%
+    display: flex
+    align-items: center
+  &-menu
+    position: relative
+    &__list
+      display: flex
+      list-style: none
+    &__item
+      text-decoration: none
+      color: $text-color
+      padding-right: 50px
+      font-size: 18px
+      // &:last-child
+      //   padding-right: 0px
+  &-button
+    font-size: 18px
+    color: $seconderyText-color
+    background-color: $buttonDisable-color
+    padding: 15px 35px 15px 35px
+    border: none
+    border-radius: 25px
+    cursor: pointer
+    &:hover
+      background-color: $buttonActive-color
+.b-menu
+  display: none
+@media ( max-width: 768px)
+  .navbar
+    &-menu
+      max-width: 200px
+      position: absolute
+      left: 145px
+      right: 0
+      top: 100px
+      padding: 20px
+      flex-direction: column
+      background-color: $buttonDisable-color
+      z-index: 9
+      border-radius: 10px
+      opacity: 0
+      visibility: hidden
+      transform: translateY(20%)
+      transition: opacity 0.5s, transform 0.5s
+      &__list
+        justify-content: center
+        display: flex
+        flex-direction: column
+      &__item
+        padding-right: 15px
+  .b-menu
+    display: block
+    background-color: transparent
+    border: none
+    width: 40px
+    height: 40px
+    margin-left: 10px
+    cursor: pointer
+  .is-open
+    opacity: 1
+    visibility: visible
+    transform: translateY(0)
