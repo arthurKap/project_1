@@ -1,4 +1,5 @@
 .navbar
+  background-image: url("../img/bg.webp")
   background-color: $main-color
   &-block
     display: flex
@@ -11,9 +12,8 @@
     align-items: center
   &-menu
     position: relative
-    &__list
-      display: flex
-      list-style: none
+    display: flex
+    list-style: none
     &__item
       text-decoration: none
       color: $text-color
@@ -40,7 +40,7 @@
       position: absolute
       left: 145px
       right: 0
-      top: 100px
+      top: 85px
       padding: 20px
       flex-direction: column
       background-color: $buttonDisable-color
@@ -65,6 +65,6 @@
     margin-left: 10px
     cursor: pointer
   .is-open
-    opacity: 1
+    opacity: 0.8
     visibility: visible
     transform: translateY(0)

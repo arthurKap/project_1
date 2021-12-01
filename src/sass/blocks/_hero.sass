@@ -1,0 +1,71 @@
+.hero
+  background-color: $main-color
+  background-image: url("../img/bg.webp")
+  overflow: hidden
+  &-block
+    display: flex
+    justify-content: space-between
+    // align-items: center
+    position: relative
+  &-text
+    margin-bottom: 320px
+  &-image
+    display: flex
+    align-items: baseline
+    position: absolute
+    top: -170px
+    right: -90px
+  &-subtitle
+    display: inline-block
+    color: $seconderyText-color
+    font-size: 24px
+    border-radius: 25px
+    background-color: $buttonDisable-color
+    padding: 15px 30px 15px 30px
+    margin-bottom: 40px
+  &-title
+    font-weight: bold
+    font-size: 64px
+    line-height: 80px
+    max-width: 485px
+    color: $seconderyText-color
+    margin-bottom: 30px
+  &-description
+    display: inline-block
+    font-size: 18px
+    line-height: 29px
+    max-width: 485px
+    margin-bottom: 50px
+    color: #849499
+  &-links
+    &__item
+      display: inline-block
+      text-decoration: none
+      color: #B6CDD5
+      font-size: 18px
+      line-height: 29px
+      margin-right: 50px
+      padding: 15px 35px 15px 35px
+      &:hover
+        color: $seconderyText-color
+        border-radius: 25px
+        background-color: $buttonActive-color
+  &-reference
+    top: 50%
+    left: 50%
+    transform: translate(130%, -185%)
+    position: absolute
+    padding: 20px 28px 20px 28px
+    background: rgba(255, 255, 255, 0.08)
+    border: 3px solid rgba(255, 255, 255, 0.5)
+    box-sizing: border-box
+    backdrop-filter: blur(58px)
+    border-radius: 20px
+    &__description
+      color: $seconderyText-color
+      max-width: 250px
+    &__person
+      display: flex
+      align-items: center
+.section
+  padding-top: 150px
