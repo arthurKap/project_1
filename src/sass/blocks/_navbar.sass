@@ -15,12 +15,27 @@
     display: flex
     list-style: none
     &__item
+      // display: inline-block
+      position: relative
       text-decoration: none
       color: $text-color
-      padding-right: 50px
+      margin-right: 50px
       font-size: 18px
       // &:last-child
       //   padding-right: 0px
+      &:after
+        display: block
+        position: absolute
+        left: 0
+        right: 0
+        width: 0
+        height: 2px
+        background-color: $text-color
+        content: ""
+        transition: width 0.3s ease-out
+      &:hover:after,
+      &:focus::after
+        width: 100%
   &-button
     font-size: 18px
     color: $seconderyText-color

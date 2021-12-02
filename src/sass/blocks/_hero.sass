@@ -23,11 +23,12 @@
     background-color: $buttonDisable-color
     padding: 15px 30px 15px 30px
     margin-bottom: 40px
+    +bell
   &-title
-    font-weight: bold
+    +bold
     font-size: 64px
     line-height: 80px
-    max-width: 485px
+    max-width: 540px
     color: $seconderyText-color
     margin-bottom: 30px
   &-description
@@ -64,8 +65,20 @@
     &__description
       color: $seconderyText-color
       max-width: 250px
+      font-size: 14px
+      line-height: 22px
     &__person
       display: flex
       align-items: center
+      &__image
+        margin-right: 15px
+      &__info
+        display: flex
+        flex-direction: column
+        color: $seconderyText-color
+        font-size: 16px
+        line-height: 22px
+      &__name
+        +bold
 .section
   padding-top: 150px
