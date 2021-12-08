@@ -227,8 +227,8 @@ img {
 }
 
 .container {
-  width: 1170px;
-  height: auto;
+  max-width: 1170px;
+  width: 90%;
   margin: auto;
 }
 
@@ -330,19 +330,16 @@ img {
 }
 
 .hero-text {
-  margin-bottom: 320px;
-}
-
-.hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  position: absolute;
-  top: -170px;
-  right: -90px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .hero-subtitle {
@@ -449,6 +446,7 @@ img {
 
 .section {
   padding-top: 150px;
+  padding-bottom: 320px;
 }
 
 .statistic-block {
@@ -492,7 +490,175 @@ img {
   font-size: 18px;
 }
 
+.services-title {
+  padding-bottom: 70px;
+  color: #08546c;
+  margin: auto;
+  max-width: 510px;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.services-subtitle {
+  color: #08546c;
+  text-align: center;
+  font-size: 24px;
+  line-height: 22px;
+  text-decoration: underline;
+  padding-bottom: 30px;
+  font-family: "Schoolbell",sans-serif;
+  font-weight: 400;
+}
+
+.services-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-card {
+  max-width: 273px;
+  padding: 30px;
+  background: #fff;
+  -webkit-box-shadow: 0px 41.7776px 33.4221px rgba(0,0,0,.0503198);
+          box-shadow: 0px 41.7776px 33.4221px rgba(0,0,0,.0503198);
+  margin-right: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-card:last-child {
+  margin-right: 0;
+}
+
+.services-card:hover {
+  background: #08546c;
+  -webkit-box-shadow: 0px 41.7776px 33.4221px rgba(0,0,0,.0503198);
+          box-shadow: 0px 41.7776px 33.4221px rgba(0,0,0,.0503198);
+  color: #fff;
+}
+
+.services-card__image {
+  display: block;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 25%;
+  background-color: #f5fbfc;
+}
+
+.services-card__name {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Inter Regular",sans-serif;
+  font-weight: 700;
+}
+
+.services-card__description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a1b5bb;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.portfolio-title {
+  color: #08546c;
+  font-size: 45px;
+  line-height: 56px;
+}
+
+.portfolio-description {
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 42px;
+}
+
+.portfolio-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-card {
+  padding-bottom: 70px;
+}
+
+.portfolio-card__title {
+  font-size: 30px;
+  line-height: 29px;
+  color: #08546c;
+}
+
+.portfolio-card__description {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 426px;
+}
+
+.portfolio-card__link {
+  text-decoration: none;
+  color: #08546c;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.portfolio-card__link:hover {
+  color: #ffa63a;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 766px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero-title {
+    font-size: 45px;
+    line-height: 65px;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero-text {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 90%;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .navbar-menu {
     max-width: 200px;
     position: absolute;
@@ -552,5 +718,11 @@ img {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    max-width: 320px;
   }
 }
