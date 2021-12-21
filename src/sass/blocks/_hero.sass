@@ -2,15 +2,16 @@
   background-color: $main-color
   background-image: url("../img/bg.webp")
   overflow: hidden
+  padding-bottom: 120px
   &-block
     display: flex
     justify-content: space-between
-    // align-items: center
-    position: relative
   &-text
     display: flex
     flex-direction: column
     justify-content: flex-end
+    text-align: center
+    margin-bottom: 30px
   &-subtitle
     display: inline-block
     color: $seconderyText-color
@@ -36,22 +37,19 @@
     color: #849499
   &-links
     &__item
+      text-align: center
       display: inline-block
       text-decoration: none
       color: #B6CDD5
       font-size: 18px
       line-height: 29px
-      margin-right: 50px
       padding: 15px 35px 15px 35px
       &:hover
         color: $seconderyText-color
         border-radius: 25px
         background-color: $buttonActive-color
   &-reference
-    top: 50%
-    left: 50%
-    transform: translate(130%, -185%)
-    position: absolute
+    margin-top: 30px
     padding: 20px 28px 20px 28px
     background: rgba(255, 255, 255, 0.08)
     border: 3px solid rgba(255, 255, 255, 0.5)
@@ -76,9 +74,6 @@
         line-height: 22px
       &__name
         +bold
-.section
-  padding-top: 150px
-  padding-bottom: 320px
 @media ( max-width: 1200px )
   .container
     width: 90%
