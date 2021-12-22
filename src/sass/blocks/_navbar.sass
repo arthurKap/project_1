@@ -19,8 +19,9 @@
       position: relative
       text-decoration: none
       color: $text-color
-      margin-right: 50px
+      padding-bottom: 15px
       font-size: 18px
+      display: block
       // &:last-child
       //   padding-right: 0px
       &:after
@@ -53,7 +54,7 @@
     &-menu
       max-width: 200px
       position: absolute
-      left: 145px
+      left: 60px
       right: 0
       top: 85px
       padding: 20px
@@ -69,8 +70,6 @@
         justify-content: center
         display: flex
         flex-direction: column
-      &__item
-        padding-right: 15px
   .b-menu
     display: block
     background-color: transparent
@@ -80,6 +79,12 @@
     margin-left: 10px
     cursor: pointer
   .is-open
-    opacity: 0.8
+    opacity: 1
     visibility: visible
     transform: translateY(0)
+    text-align: center
+@media (min-width: 768px)
+.navbar
+  &-menu
+    &__item
+      padding: 15px

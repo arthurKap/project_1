@@ -18,9 +18,42 @@
     color: $main-color
     padding-bottom: 30px
     &__value
-      font-size: 3.5rem
+      font-size: 32px
       +bold
       display: block
       margin-bottom: 30px
     &__name
       font-size: 18px
+@media ( min-width: 568px )
+  .statistic
+    &-item
+      &__value
+        font-size: 48px
+@media ( min-width: 768px )
+  .statistic
+    &-block
+      transform: translateY(-121.5px)
+    &-items
+      flex-direction: row
+    &-item
+      flex-basis: 25%
+      &__value
+        margin: 0
+@media ( min-width: 1201px )
+  .statistic
+    &-block
+      text-align: start
+      padding: 25px 170px
+    &-items
+      justify-content: start
+    &-item
+      flex-basis: 25%
+      text-align: center
+      &:first-child
+        text-align: start
+      &__value
+        margin-bottom: 30px
+@media ( min-width: 1201px )
+  .statistic
+    &-block
+      transform: translateY(-155.5px)

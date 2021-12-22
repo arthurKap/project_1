@@ -4,8 +4,11 @@
   overflow: hidden
   padding-bottom: 120px
   &-block
+    padding-top: 60px
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    padding-bottom: 60px
   &-text
     display: flex
     flex-direction: column
@@ -23,8 +26,8 @@
     +bell
   &-title
     +bold
-    font-size: 64px
-    line-height: 80px
+    font-size: 48px
+    line-height: 60px
     max-width: 540px
     color: $seconderyText-color
     margin-bottom: 30px
@@ -35,6 +38,10 @@
     max-width: 485px
     margin-bottom: 50px
     color: #849499
+  &-image
+    display: flex
+    flex-direction: column
+    align-items: center
   &-links
     &__item
       text-align: center
@@ -56,6 +63,7 @@
     box-sizing: border-box
     backdrop-filter: blur(58px)
     border-radius: 20px
+    max-width: 320px
     &__description
       color: $seconderyText-color
       max-width: 250px
@@ -74,17 +82,31 @@
         line-height: 22px
       &__name
         +bold
-@media ( max-width: 1200px )
-  .container
-    width: 90%
+@media ( min-width: 768px )
   .hero
     &-title
-      font-size: 45px
-      line-height: 65px
-@media ( max-width: 960px )
+      font-size: 68px
+      line-height: 80px
+@media ( min-width: 1200px )
   .hero
     &-block
-      flex-direction: column
-      align-items: center
-    &-text
-      padding-top: 50px
+      flex-direction: row
+      justify-content: space-between
+@media ( min-width: 1440px )
+  .hero
+    &-image
+      position: relative
+    &-reference
+      position: absolute
+      right: 0
+      bottom: 319px
+      transform: translate(133px, 10px)
+@media ( min-width: 1440px )
+  .hero
+    &-image
+      position: relative
+    &-reference
+      position: absolute
+      right: 0
+      bottom: 330px
+      transform: translate(215px, 10px)

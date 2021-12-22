@@ -2,7 +2,7 @@
   &-block
     display: flex
     align-items: center
-    flex-wrap: wrap
+    flex-wrap: wrap-reverse
     justify-content: center
   &-left
     flex-basis: 30%
@@ -41,3 +41,17 @@
       text-decoration: none
       color: #757575
       margin-bottom: 10px
+@media  ( min-width: 568px )
+  .footer
+    &-navItem
+      display: flex
+      flex-wrap: nowrap
+      flex-direction: row
+      justify-content: space-between
+      padding-bottom: 30px
+@media  ( min-width: 1200px )
+  .footer
+    &-block
+      padding-top: 200px
+    &-navItem
+      justify-content: space-evenly
