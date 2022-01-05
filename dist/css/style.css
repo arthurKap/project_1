@@ -1960,6 +1960,14 @@ img {
             transform: translate(133px, 10px);
   }
 
+  .portfolio-cards {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1600px) {
   .hero-image {
     position: relative;
   }
@@ -1971,12 +1979,6 @@ img {
     -webkit-transform: translate(215px, 10px);
         -ms-transform: translate(215px, 10px);
             transform: translate(215px, 10px);
-  }
-
-  .portfolio-cards {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
